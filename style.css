@@ -1,0 +1,295 @@
+:root{
+    --cor-fundo: #C6D1C5;
+    --cor-principal: #36594F;
+    --cor-secundaria: #29463E;
+    --cor-destaque: #D7BE78;
+    --cor-texto: #F5F3EA;
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.fundo-simbolos {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    color: rgba(41, 70, 62, 0.22);
+    font-family: Georgia, serif;
+    font-weight: 700;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.fundo-simbolos span {
+    position: absolute;
+}
+
+.fundo-simbolos span:nth-child(1) {
+    top: 9%;
+    left: 9%;
+    font-size: 2rem;
+    transform: rotate(-12deg);
+}
+
+.fundo-simbolos span:nth-child(2) {
+    top: 17%;
+    right: 8%;
+    font-size: 1.5rem;
+    transform: rotate(10deg);
+}
+
+.fundo-simbolos span:nth-child(3) {
+    bottom: 14%;
+    left: 10%;
+    font-size: 2.4rem;
+    transform: rotate(8deg);
+}
+
+.fundo-simbolos span:nth-child(4) {
+    bottom: 20%;
+    right: 12%;
+    font-size: 1.8rem;
+    transform: rotate(-10deg);
+}
+
+.fundo-simbolos span:nth-child(5) {
+    top: 68%;
+    left: 24%;
+    font-size: 1.2rem;
+}
+
+.fundo-simbolos span:nth-child(6) {
+    top: 44%;
+    left: 4%;
+    font-size: 2rem;
+    transform: rotate(12deg);
+}
+
+.fundo-simbolos span:nth-child(7) {
+    bottom: 8%;
+    right: 34%;
+    font-size: 2.2rem;
+}
+
+.fundo-simbolos span:nth-child(8) {
+    top: 76%;
+    right: 7%;
+    font-size: 2rem;
+    transform: rotate(-8deg);
+}
+
+.fundo-simbolos span:nth-child(9) {
+    top: 44%;
+    right: 4%;
+    font-size: 2rem;
+}
+
+.caixa-principal{
+    position: relative;
+    z-index: 1;
+    background-color: var(--cor-principal);
+    width: min(100%, 760px);
+    padding: 52px;
+    border-radius: 18px;
+    box-shadow: 0 20px 55px rgba(24, 59, 50, 0.18);
+    box-sizing: border-box;
+}
+
+.tela-inicial {
+    text-align: left;
+}
+
+.etiqueta {
+    margin: 0 0 20px;
+    color: var(--cor-destaque);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+h1 {
+    max-width: 620px;
+    margin: 0;
+    color: var(--cor-texto);
+    font-family: Georgia, serif;
+    font-size: 2.8rem;
+    line-height: 1.12;
+}
+
+.resumo {
+    max-width: 610px;
+    margin: 24px 0 30px;
+    color: #DFE7DE;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.resumo-caminhos {
+    margin-top: -14px;
+}
+
+.resumo-caminhos strong {
+    color: var(--cor-destaque);
+}
+
+.formulario-inicial label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.formulario-inicial input {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 13px 14px;
+    border: 1px solid #C3CEC2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #F5F3EA;
+    color: var(--cor-secundaria);
+    font: inherit;
+}
+
+.formulario-inicial input:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 3px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 3px;
+}
+
+.botao-iniciar span {
+    margin-left: 12px;
+}
+
+.conteudo-jogo[hidden] {
+    display: none;
+}
+
+.caixa-perguntas {
+    margin-bottom: 24px;
+    font-family: Georgia, serif;
+    font-size: 1.55rem;
+    line-height: 1.4;
+}
+
+.identificador-caminho {
+    display: inline-block;
+    margin: 0 0 14px;
+    padding: 6px 10px;
+    border-left: 3px solid var(--cor-destaque);
+    background: rgba(245, 243, 234, 0.1);
+    color: var(--cor-destaque);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.caixa-alternativas button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-alternativas button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.titulo-resultado {
+    margin: 0 0 12px;
+    color: var(--cor-destaque);
+    font-family: Georgia, serif;
+}
+
+.texto-resultado {
+    white-space: pre-line;
+}
+
+.tela-creditos {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.tela-creditos p {
+    margin: 12px 0;
+}
+
+.fontes-consultadas {
+    display: inline-block;
+    margin: 0 0 18px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.fontes-consultadas a {
+    color: var(--cor-destaque);
+    overflow-wrap: anywhere;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .caixa-principal {
+        padding: 30px 24px;
+        border-radius: 14px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    .caixa-perguntas {
+        font-size: 1.3rem;
+    }
+}
