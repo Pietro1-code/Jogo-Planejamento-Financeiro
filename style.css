@@ -154,12 +154,13 @@ h1 {
     width: 100%;
     margin-bottom: 18px;
     padding: 13px 14px;
-    border: 1px solid #C3CEC2;
+    border: 1px solid #aecae4;
     border-radius: 8px;
     box-sizing: border-box;
     background-color: #F5F3EA;
     color: var(--cor-secundaria);
-    font: inherit;
+    font: inherit; 
+ haha
 }
 
 .formulario-inicial input:focus-visible {
