@@ -160,7 +160,6 @@ h1 {
     background-color: #F5F3EA;
     color: var(--cor-secundaria);
     font: inherit; 
- haha
 }
 
 .formulario-inicial input:focus-visible {
@@ -170,7 +169,7 @@ h1 {
 
 button {
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+    color: var(--cor-texto); men
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 14px 20px;
